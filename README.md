@@ -6,6 +6,7 @@
 ⦁	target : today we want to delete all of the learned words so basicly after this we will know how to do something with a bunch of data with in a specific state another thing that we do is making a dialouge box as a new nav destination which makes it a seperate fragment with its own viewmodel and by doing this we made our alert dialouge totally reusable so if we needed it again somewhere else we will just navigate to the destination again and its done.
 ⦁	we need a new dao in order to delete words with the learned attribiute equal to true.
 ⦁	we made a query for this task and it looks like this
+
 @Query("DELETE FROM word_table WHERE learned = 1")
 suspend fun deleteLearnedWords()
 ⦁	now we should create the alert dialouge fragment and add it to the nav graph.
