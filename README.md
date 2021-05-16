@@ -9,6 +9,7 @@
 
 @Query("DELETE FROM word_table WHERE learned = 1")
 suspend fun deleteLearnedWords()
+
 ⦁	now we should create the alert dialouge fragment and add it to the nav graph.
 ⦁	we dont need to make a layout for the dialouge we can just use the default layout and we only need to make the kotlin fragment class.
 ⦁	we make a  new package for this dialog fragment which has a kotlin class that inherits base dialog fragment
