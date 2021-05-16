@@ -2,13 +2,20 @@ Hello and welcome to the par3 of ANDROID JETPACK TUTORIAL by *radman hayati*
 
 lets see what happens today
 
-⦁	nav args sending a word from words fragment(list) to edit/add word fragment
+⦁	nav arg is sending a word from words fragment(list) to edit/add word fragment
+
 ⦁	we check the nullable option and set the default value to null therefore when we click the add button we dont need to send anything and it will send null so the apllications knows that we want to add a new item as it didnt recieve a word.
+
 ⦁	there are two places where we can get a handle to the arguments that we pass to the fragment which are the fragment itself and viewmodel but  as we know the viewmodel is the class responsible for providing the data that fragment has to present 
+
 ⦁	WE MADE A NEW VIEW MODEL
+
 ⦁	we can retrieve our navigations argument in the fragment and send them to view model but we also can reterieve them directly in the view model through the safe state handle 
+
 ⦁	target : today we want to delete all of the learned words so basicly after this we will know how to do something with a bunch of data with in a specific state another thing that we do is making a dialouge box as a new nav destination which makes it a seperate fragment with its own viewmodel and by doing this we made our alert dialouge totally reusable so if we needed it again somewhere else we will just navigate to the destination again and its done.
+
 ⦁	we need a new dao in order to delete words with the learned attribiute equal to true.
+
 ⦁	we made a query for this task and it looks like this
 
 @Query("DELETE FROM word_table WHERE learned = 1")
